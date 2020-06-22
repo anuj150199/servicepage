@@ -1,0 +1,267 @@
+/*body, html {
+  height: auto;
+  margin: 0;
+  background-image: url("https://breakout.in/wp-content/uploads/wallbg.jpg"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+ 
+}*/
+
+html { 
+  background: url("https://breakout.in/wp-content/uploads/wallbg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.row{
+/*  border:1px solid red ;
+*/}
+.aimg{
+/*  border:1px solid red;
+*/
+}
+.aimg > a{
+/*  border : 1px solid green;
+*/  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 25px;
+  filter: brightness(120%);
+  filter: contrast(120%);
+}
+
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 0px;
+  background-color: inherit;
+  color:white;
+  padding: 0px;
+  margin-top:20px;
+  font-family: 'Special Elite', cursive; 
+  
+/*  border:1px solid blue ;
+*/
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size:35px;
+  margin: 0px!important;
+}
+
+.grid-container div > a{
+  text-decoration: none;
+  color: #ffae00;
+}
+
+.grid-container div > a:hover{
+  color: white;
+}
+
+.left-column{
+  float:left;
+  width:49%;
+  margin-top: 50px;
+/*  border:1px solid red;
+*/}
+.right-column{
+  float:left;
+  width:49%;
+  margin-top: 50px; 
+/*  border:1px solid green;
+*/}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image1 > img{
+  display: block;
+  width: 400px;   
+  padding-left: 100px;
+/*  border:1px solid blue; 
+*/}
+.text{
+  margin: 10px;
+  padding-top: 10px;
+  padding-left: 100px;
+/*  border:1px solid blue;
+*/}
+.text .heading{
+  color: orange;
+  font-size: 35px;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+.text > p{
+  font-family: 'Shadows Into Light Two', cursive;
+  color: white;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.text-inside{
+  font-family: 'Shadows Into Light Two', cursive;
+  color: orange;
+  font-size: 20px;
+}
+.slogan{
+  margin-top: 50px;
+/*  border:1px solid green;
+*/}
+.slogan-image1{
+  float: left;
+  width: 25%;
+  padding-left: 105px;
+/*  border:1px solid red;
+*/}
+.slogan-text{
+  float: left;
+  width: 25%;
+  color: white;
+  font-family: 'Special Elite', cursive; 
+  font-size: 40px;
+  padding-left: 50px;
+/*  border:1px solid blue;
+*/
+}
+.stars{
+  color: orange;
+   font-family: 'Shadows Into Light Two', cursive;
+   font-size: 35px;
+}
+.slogan-image2{
+  float: left;
+  width: 25%;
+  padding-left: 200px;
+/*  border:1px solid pink;
+*/}
+.slogan:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.packages{
+  color: orange;
+  font-size: 50px;
+  font-family: 'Special Elite', cursive; 
+  padding-left: 100px;
+  margin-top: 50px;
+/*  border: 1px solid green;
+*/}
+
+@media screen and (max-width: 1450px) {
+.slogan{
+  width: 100%;
+}
+.slogan-image1{
+  padding-left: 0px!important;
+  margin-left: 20px;
+}
+.slogan-text{
+  padding-left: 0px!important;
+  margin-left: 30px;
+}
+.slogan-image2{
+  padding-left: 0px!important;
+  margin-left: 120px;
+}
+}
+@media screen and (max-width: 800px) { 
+.left-column, .right-column {   
+    width: 49%;
+    padding: 0;
+}
+.grid-container{
+  padding-left: 5px;
+}
+.grid-container > div {
+  text-align: center;
+  font-size:25px;
+}
+.image1 > img{
+  padding-left: 0px;
+}
+.text{
+  display: block;
+  text-align: justify;
+  padding-left: 15px;
+}
+.slogan{
+  width: 100%;
+}
+.slogan-image1{
+  padding-left: 0px!important;
+  margin-left: 20px;
+}
+.slogan-text{
+  padding-left: 0px!important;
+  margin-left: 30px;
+}
+.slogan-image2{
+  padding-left: 0px!important;
+  margin-left: 120px;
+}
+.packages{
+  padding-left: 20px;
+}
+
+}
+
+
+@media screen and (max-width: 400px) { 
+.left-column, .right-column {   
+    width: 100%;
+    padding: 0;
+}
+.aimg{
+  width: 100%;
+}
+.grid-container{
+  padding-left: 5px;
+}
+.grid-container > div {
+  text-align: center;
+  font-size:25px;
+  border-right: 2px solid orange;
+}
+.image1 > img{
+  padding-left: 0px;
+}
+.text{
+  padding-left: 15px;
+}
+.slogan-image1{
+  width: 100%;
+  margin-left: 0px!important;
+}
+.slogan-image1 > img{
+  padding-left: 120px;
+}
+.slogan-text{
+  width: 100%;
+  margin-left: 0px!important;
+}
+.slogan-text > p{
+  padding-left: 50px;
+}
+.slogan-image2{
+  width: 100%;
+  margin-left: 0px!important;
+}
+.slogan-image2 > img{
+  padding-left: 120px;
+}
+}
