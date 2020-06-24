@@ -1,0 +1,671 @@
+/*body, html {
+  height: auto;
+  margin: 0;
+  background-image: url("https://breakout.in/wp-content/uploads/wallbg.jpg"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+ 
+}*/
+/*Start of styling */
+
+html { 
+  background: url("https://breakout.in/wp-content/uploads/wallbg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+  margin: 0px;
+}
+
+.row{
+/*  border:1px solid red ;
+*/}
+.aimg{
+/*  border:1px solid blue;
+*/}
+.aimg > a{
+/*  border : 1px solid green;
+*/  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 25px;
+  filter: brightness(120%);
+  filter: contrast(120%);
+}
+
+/*Start of navigation section*/
+
+nav{
+  background: rgba(0,0,0,0);
+  height: 80px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/*.logo > img{
+  margin-left: 20px;
+  margin-top: 10px;
+  height: 75px;
+  width: 300px;
+}
+*/
+.logo > a{
+  margin-left: 50px;
+  height: 75px;
+  width: 300px;
+}
+
+.logo a img{
+  padding-top: 20px;
+}
+nav ul{
+  float: right;
+  margin-right: 60px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 2px;
+}
+nav ul li a{
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase; 
+  font-family: 'Special Elite', cursive; 
+  text-decoration: none;
+}
+nav ul li a:hover{
+  background: orange;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+/*End of Navigation Section*/
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 0px;
+  background-color: inherit;
+  color:white;
+  padding: 0px;
+  margin-top:80px;
+  font-family: 'Special Elite', cursive; 
+  
+/*  border:1px solid blue ;
+*/
+}
+/*Start of grid section*/
+
+.grid-container > div {
+  text-align: center;
+  font-size:35px;
+  margin: 0px!important;
+}
+
+.grid-container div > a{
+  text-decoration: none;
+  color: #ffae00;
+}
+
+.grid-container div > a:hover{
+  color: white;
+}
+
+/*End of grid section*/
+
+/*Start of intro section*/
+.row{
+  display: flex;
+}
+.left-column{
+  flex: 49%;
+/*  border:1px solid red;
+*/}
+.right-column{
+  flex: 49%;
+/*  border:1px solid green;
+*/}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image1 > img{
+  width: 80%;
+  height: 80%;
+  padding: 50px;
+/*  border:1px solid blue; 
+*/}
+.text{
+  padding-top: 50px;
+  padding-left: 100px;
+/*  border:1px solid blue;
+*/}
+.text .heading{
+  color: orange;
+  font-size: 35px;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+.text > p{
+  font-family: 'Shadows Into Light Two', cursive;
+  color: white;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.text-inside{
+  font-family: 'Shadows Into Light Two', cursive;
+  color: orange;
+  font-size: 20px;
+}
+
+/*End of intro section*/
+
+/*Start of slogan section*/
+
+
+.slogan{
+  margin-top: 50px;
+  display: flex;
+/*  border:1px solid green;
+*/}
+.slogan-image1{
+  flex: 30%;
+/*  border:1px solid red;
+*/}
+
+.slogan-image1 > img{
+  height: 200px;
+  width: 200px;
+  padding-left: 100px;
+}
+
+.slogan-text{
+  flex: 30%;
+  color: white;
+  font-family: 'Special Elite', cursive; 
+  font-size: 40px;
+/*  border:1px solid blue;
+*/}
+.slogan-text > p{
+  padding-left: 100px;
+}
+.stars{
+  color: orange;
+   font-family: 'Shadows Into Light Two', cursive;
+   font-size: 35px;
+}
+.slogan-image2{
+  flex:  30%;
+/*  border:1px solid pink;
+*/}
+
+.slogan-image2 > img{
+  height: 200px;
+  width: 200px;
+  padding-left: 100px;
+}
+.slogan:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*End of slogan section*/
+
+/*Start of packages section*/
+
+.packages{
+  color: orange;
+  font-size: 50px;
+  font-family: 'Special Elite', cursive; 
+  padding-left: 100px;
+  margin-top: 50px;
+/*  border: 1px solid green;
+*/}
+
+/*End of packages section*/
+
+
+/*Start of footer Section*/
+
+footer{
+  background: #383838;
+  padding: 5px 40px;
+  font-family: 'Special Elite', cursive; 
+}
+.flogo > a{
+  font-size: 25px;
+
+}
+
+footer ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+footer ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+footer ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+footer ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: white;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+footer ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+footer ul li.flogo{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+  color: orange;
+}
+footer ul li a{
+  color: orange;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+footer ul li:hover a{
+  color: white;
+}
+footer ul li.btn{
+  display: none;
+}
+footer ul li.btn.hide i:before{
+  content: '\f00d';
+}
+
+.privacy > ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+}
+.privacy > ul li{
+  padding-right: 10px;
+  cursor: pointer;
+}
+.privacy > ul li.items{
+  position: relative;
+  width: auto;
+  margin:0px;
+  text-align: center;
+  order: 3;
+}
+.privacy > ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+  background: white;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.privacy > ul li.items:hover:after{
+  opacity: 1;
+  bottom: 0px;
+}
+.privacy > ul li a{
+  color: orange;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+.privacy > ul li:hover a{
+  color: white;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 10px;
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.google {
+  background-color: #4285f4;
+  color: white;
+}
+.fotrow{
+  display: flex;
+}
+.fotcol{
+  flex: 50%;
+}
+.fotrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.copyright{
+  margin-top: 10px;
+  padding-left: 40px;
+}
+.copyright span{
+  color: orange;
+}
+.social{
+  margin-top: 0px;
+  padding-left: 200px;
+}
+.social a{
+  padding:0px;
+}
+.social a span{
+  height: 30px;
+  width: 30px;
+  background: orange;
+  color: black;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+ .social a span:hover{
+  background: white;
+}
+
+/*End of footer section*/
+/*Start of media queries for 900px*/
+
+@media screen and (max-width: 900px) { 
+.row{
+  flex-direction: column;
+
+}  
+.left-column, .right-column {   
+    width: 100%;
+    padding: 0;
+}
+.row .left-column{
+  display: flex;
+  justify-content: center;
+}
+.row .right-column{
+  display: flex;
+  justify-content: center;
+}
+.grid-container{
+  padding-left: 5px;
+}
+.grid-container > div {
+  text-align: center;
+  font-size:25px;
+}
+.image1 > img{
+  width: 350px;
+  height: 350px;
+}
+.text{
+  display: block;
+  text-align: justify;
+  padding-left: 50px;
+  padding-right: 10px;
+}
+.packages{
+  padding-left: 50px;
+  font-size: 35px;
+}
+.stars{
+  font-size: 25px;
+}
+}
+
+/*End of media queries for 900px*/
+
+/*Start of media queries for 500px*/
+
+@media screen and (max-width: 500px) { 
+.row{
+  flex-direction: column;
+
+}  
+.left-column, .right-column {   
+    width: 100%;
+    padding: 0;
+}
+.row .left-column{
+  display: flex;
+  justify-content: center;
+}
+.row .right-column{
+  display: flex;
+  justify-content: center;
+}
+.aimg{
+  width: 100%;
+}
+.grid-container{
+  padding-left: 0px;
+}
+.grid-container > div {
+  text-align: center;
+  font-size:15px;
+}
+.image1 > img{
+  width: 250px;
+  height: 250px;
+  padding:20px;
+}
+.text{
+  padding-left: 5px;
+}
+.slogan-image1{
+  display: flex;
+}
+.slogan-image1 > img{
+  width: 150px;
+  height: 150px;
+  padding: 0px;
+}
+.slogan-text{
+  display: flex; 
+}
+.slogan-text > p{
+  padding: 0px;
+}
+.slogan-image2 > img{
+  width: 150px;
+  height: 150px;
+  padding: 0px;
+}
+.slogan-image2{
+  display: flex;
+}
+.text .heading{
+  font-size: 25px;
+}
+.packages{
+  font-size: 30px;
+  padding-left: 5px;
+}
+
+.packages .outcast{
+  font-size: 20px;
+}
+.stars{
+  font-size: 25px;
+}
+}
+
+/*End of media queries for 500px*/
+
+
+/*Start of media queries for 1200px*/
+
+@media (max-width: 1200px){
+  .logo > a{
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+.slogan{
+  flex-direction: column;
+}
+.slogan-image1{
+  display: flex;
+  justify-content: center;
+}
+.slogan-image1 > img {
+  padding: 0px;
+} 
+.slogan-text{
+  display: flex;
+  justify-content: center;
+  font-size: 22px!important;
+}
+.slogan-text > p{
+  padding: 0px;
+}
+.slogan-image2{
+  display: flex;
+  justify-content: center;
+}
+
+.slogan-image2 > img {
+  padding: 0px;
+} 
+}
+@media (max-width: 900px){
+  .checkbtn{
+    display: block;
+    margin-right: 40px;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #383838;
+    top: 65px;
+    left: -150%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: white;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+/*End of media queries for 1200px*/
+
+
+/*Media section for footer section*/
+
+@media all and (max-width: 900px){
+  footer{
+    padding: 5px 30px;
+  }
+  footer ul li.items{
+    width: 100%;
+    display: none;
+  }
+  .google{
+    width: 50%;
+  }
+  footer ul li.items.show{
+    display: block;
+  }
+  footer ul li.btn{
+    display: block;
+  }
+  footer ul li.items:hover:after{
+    opacity: 0;
+  }
+  .privacy > ul{
+    justify-content: center;
+  }
+  .fotrow{
+    flex-direction: column;
+    align-items: center;
+  }
+  .copyright{
+    padding-left: 0px;
+  }
+  .social{
+    padding-left: 0px;
+  }
+}
+
+@media all and (max-width: 400px){
+  .privacy > ul li a{
+  font-size: 10px;
+}
+  .copyright{
+    font-size: 10px;
+  }
+}
+
+/*End of media queries for footer section*/
